@@ -18,3 +18,8 @@ dependencies = [
     "tortoise-orm>=0.25.1",
     "uvicorn>=0.37.0",
 ]
+
+[tool.aerich]
+tortoise_orm = "app.config.database.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."

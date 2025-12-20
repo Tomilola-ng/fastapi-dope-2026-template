@@ -19,3 +19,5 @@ async def init_db():
     await Tortoise.init(
         config=settings.TORTOISE_CONFIG,
     )
+
+TORTOISE_ORM = settings.TORTOISE_CONFIG
